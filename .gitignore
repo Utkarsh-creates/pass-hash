@@ -1,1 +1,15 @@
-.vscode
+# VS Code
+.vscode/
+
+# Build files
+*.exe
+*.out
+*.obj
+*.o
+
+# Debug files
+*.pdb
+*.ilk
+
+# Other
+*.log
