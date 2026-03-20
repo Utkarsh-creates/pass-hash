@@ -6,3 +6,5 @@
 *.pdb
 *.ilk
 *.log
+*.exp
+*.lib
