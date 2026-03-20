@@ -29,7 +29,7 @@ class Credentials{
 int main()
 {
     try{
-        Credentials myUser("123567832");
+        Credentials myUser("123");
     }
     catch(const std::runtime_error& e){
         std::cerr<< "Security Error: "<< e.what() << std::endl;
