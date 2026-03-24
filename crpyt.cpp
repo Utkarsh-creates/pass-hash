@@ -9,6 +9,7 @@ extern "C" {
 }
 class Credentials{
     private:        
+    std::string username;
     std::string password;
     std::vector<uint8_t> salt;
     public:
@@ -52,7 +53,7 @@ void encrypt(const class Credentials& creds) override{
         t_cost, m_cost, parallelism, pass.data(), pass.size(),salt.data(), salt.size(),hash.data(),hash.size()
     );
     for (char &c : pass) {
-    c = '\0'; // Overwrites every character with a null byte
+    c = '\0';
 }
 if (result !=ARGON2_OK){
     throw std::runtime_error("Encryption failed with error code: " + std::to_string(result));
